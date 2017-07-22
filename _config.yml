@@ -1,0 +1,8 @@
+title: 豆浆馆
+description: 对喜欢的事专心，对喜欢的人长情。
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
