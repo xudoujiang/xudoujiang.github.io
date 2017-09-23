@@ -5,3 +5,5 @@ deploy:
      repo: https://github.com/leopardpan/xudoujiang.github.io.git
 
      branch: master
+
+theme: jekyll-theme-cayman
