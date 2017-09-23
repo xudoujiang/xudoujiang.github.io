@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Welcome to Jekyll! ... and Typing!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -130,7 +131,14 @@ exclude:
   - src/
 
 #  --- SESSION PRIVATE ---
+=======
+deploy:
+>>>>>>> Stashed changes
 
+     type: git
 
+     repo: https://github.com/xudoujiang/xudoujiang.github.io.git
 
+     branch: master
 
+theme: jekyll-theme-cayman
