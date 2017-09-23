@@ -2,7 +2,7 @@ deploy:
 
      type: git
 
-     repo: https://github.com/leopardpan/xudoujiang.github.io.git
+     repo: https://github.com/xudoujiang/xudoujiang.github.io.git
 
      branch: master
 
