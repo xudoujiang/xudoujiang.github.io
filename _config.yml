@@ -2,7 +2,7 @@
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jekyll-theme-architect
+theme: jekyll-theme-minimal
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
