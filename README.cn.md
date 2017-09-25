@@ -5,7 +5,7 @@
 
 An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".  
 
-[**☞ Live Preview**](https://itimetraveler.github.io/hexo-theme-hiker/)  |  [**✎ Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
+[**☞ 在线预览**](https://itimetraveler.github.io/hexo-theme-hiker/)  |  [**✎ Hiker English Documentation**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.md)
 
 
 ![Desktop Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png)
@@ -14,23 +14,25 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 
 <!--more-->
 
-## Installation
+以上Demo站点的源文件在这里，大家有需要的可以参考：https://github.com/iTimeTraveler/hexo-theme-hiero/tree/site-source
 
- 1. Get it from GitHub
+## 安装步骤
+
+ 1. 从GitHub上获取代码
 
 ```shell
  $ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
 ```
- 2. Enable
+ 2. 启用
 
- Modify `theme` setting in `_config.yml` to `hiker`.
+ 把Hexo主目录下的 `_config.yml` 文件中的字段 `theme` 修改为 `hiker`.
  ```
  # Extensions
  ## Plugins: http://hexo.io/plugins/
  ## Themes: http://hexo.io/themes/
  theme: hiker
  ```
- 3. Update
+ 3. 更新
 
 ```shell
  $ cd themes/Hiker
@@ -38,11 +40,11 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 ```
 
 
-## Features
+## 特性
 
-### Homepage background
+### 自定义首页背景
 
-You could place the image file in `YOUR_HEXO_SITE\themes\hiker\source\css\images` directory. and modify `home_background_image` in hiker/_config.yml. 
+您可以将选择的大图放到 `YOUR_HEXO_SITE\themes\hiker\source\css\images` 文件夹下. 然后更改 hiker/_config.yml文件里的`home_background_image`字段. 
 
 ```yml
 # Homepage
@@ -55,30 +57,30 @@ home_background_image:
   url: [css/images/home-bg.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]
 ```
 
-There are 3 modes to select: 
+首页背景填充方式有三种可选mode：
 
-- `image`
-- `polyline`
-- `trianglify`
+- `image`: 大图模式
+- `trianglify`: 多边形渐变背景
+- `polyline`: 随机彩色折线
 
-`image` mode is default, `trianglify` mode is from [Trianglify](https://github.com/qrohlf/trianglify), looks like below.
+默认配置为`image`模式，也就是大图模式。多边形渐变背景`polyline`模式来自[Trianglify](https://github.com/qrohlf/trianglify)大致如下图：
 
 ![](https://cloud.githubusercontent.com/assets/347189/6771063/f8b0af46-d090-11e4-8d4c-6c7ef5bd9d37.png)
 
-`polyline` mode: if you DON'T want any image as your homepage background, you can use this mode. Or you can keep `enable` true, then set `url` of `home_background_image` empty in hiker/_config.yml, you will have an default homepage with **random decorative pattern**.
+如果你不中意以上两种背景填充方式，可以选择随机彩色折线`polyline`模式，长相参考下图。
+
+> ！！注意：如果在使用`image`模式时`url`为空（`enable`仍然保持true）, 主题也会自动使用下面这种**`漂亮的随机线条` **填充（也就是会自动退化为`polyline`模式）：
 
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/home-no-background1.png)
 
 
+### Code 色彩主题
 
-
-### Code Highlight Theme
-
-Hiker use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
+Hiker 使用[Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) 作为代码高亮的配色. 总共有六种选择: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
 
 ![code `default` theme Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/code-theme-default.png)
 
-Above preview picture is default theme. the image below show other five Highlight themes.
+默认高亮配色如上图。 另外的五种配色如下.
 
 ![code themes](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/code-theme.jpg?raw=true)
 
@@ -92,9 +94,9 @@ Modify `highlight_theme` in hiker/_config.yml.
 highlight_theme: default
 ```
 
-### Blog Theme Color
+### 博客主题色
 
-Hiker provide five color themes for your blog.
+Hiker 为你的博客提供了五种可选的主题色，可以配置成`random`, 每次生成博客时会自动随机使用一个主题色.
 
 ![theme colors](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/theme-color.png?raw=true)
 
@@ -113,16 +115,16 @@ You can modify `theme_color` in hiker/_config.yml.
 theme_color: random
 ```
 
-### Night mode
+### 夜间模式
 
-Just for article reading. In article page, you can click the **logo image of header** to switch to Night mode.
+只有在文章阅读页面，点击左上角的logo图片，就能打开设置对话框，操作如下图
 
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/night-mode.gif)
 
 
-### Search
+### 站内搜索
 
-Hiker use `Insight Search` to help you search anything inside your site without any third-party plugin.
+Hiker 使用 `Insight Search` 实现了站内搜索，在_config.yml文件中启用如下.
 
 ```yml
 # Search
@@ -132,7 +134,7 @@ search:
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 ```
 
-> Attention: You need to install `hexo-generator-json-content` before using Insight Search.
+> **！注意**: 在使用搜索功能前必须在Hexo目录下使用以下命令安装 `hexo-generator-json-content` 插件.
 
 ```bash
 $ npm install -S hexo-generator-json-content
@@ -140,7 +142,7 @@ $ npm install -S hexo-generator-json-content
 
 ### Fancybox
 
-Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Hiker使用[Fancybox]来浏览展示您文章中的图片，支持以下方式在文章中添加图片：
 
 ```
 ![img caption](img url)
@@ -148,10 +150,11 @@ Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fa
 {% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
 
-### Sidebar
+### 侧边栏
 
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-Hiker provides 5 built-in widgets:
+`sidebar`（侧边栏位置）可以设置为 `left` , `right`, `bottom`.
+
+Hiker 有以下5种侧边栏插件:
 
 - category
 - tag
@@ -161,13 +164,33 @@ Hiker provides 5 built-in widgets:
 
 All of them are enabled by default. You can edit them in `widget` setting.
 
-### Comment support
 
-Hiker has native support for DuoShuo & Disqus comment systems. Modify the following snippets to hiker `hiker/_config.yml`:
+
+### 打赏捐赠按钮
+
+![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/donation-btn.png)
+
+每篇文章最后显示打赏按钮，目前仅支持微信支付和支付宝两种打赏方式。您可以在文件 `hiker/_config.yml` 中配置您的微信、支付宝付款二维码图片的URL:
+
+
+```yml
+# donation button
+donate:
+    enable: true
+    message: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!'
+    wechatImage: https://your_WECHAT_PAY_ImageUrl
+    alipayImage: https://your_ALIPAY_ImageUrl
+```
+
+
+
+### 评论
+
+已完全支持原生Disqus、livere（来必力）、wumii（无觅）评论系统。因多说、网易云跟帖均已停止服务，在国内建议大家使用相对稳定的来必力评论系统。在文件 `hiker/_config.yml` 中修改以下代码片段:
 
 ```yml
 # comment ShortName, you can choose only ONE to display.
-gentie_productKey: #your-gentie-product-key
+gentie_productKey: #网易云跟帖your-gentie-product-key
 duoshuo_shortname: 
 disqus_shortname: 
 livere_shortname: MTAyMC8yOTQ4MS82MDQ5
@@ -175,16 +198,24 @@ uyan_uid:
 wumii: 
 ```
 
-## Browser support
+- #### 网易云跟帖说明（已停止服务）
+
+登陆 [网易云跟帖](https://gentie.163.com/) 获取你的 Product Key。请注意，您在**`云跟帖管理后台设置的域名必须跟您站点的域名一致`**。在本地测试时，需要做两步骤前置设定：
+
+1. 修改 hosts 文件，将您域名的请求指向本地。例如：127.0.0.1 yoursite.com
+2. 修改 Hexo 监听的端口为 80：`hexo s --debug -p 80`
+
+测试完成后请将 hosts 文件中的域名映射删除即可。
+
+## 支持的浏览器
 
 ![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/browser-support.png?raw=true)
 
 
 ## Contributing
 
-All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
+欢迎大家有各种问题和改进建议的，直接提issue或者评论，或者pull request都行。我会尽量抽时间和大家交流。刚接触Hexo不久，疏忽不足之处，还望大家海涵！
 
-Looking forward to your pull request.
 
 [Hexo]: https://hexo.io/
 [Fancybox]: http://fancyapps.com/fancybox/
