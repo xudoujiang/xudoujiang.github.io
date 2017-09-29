@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2017-09-28 21:17:54 +0800
+categories: jekyll update
+---
+
+2017年9月28日，记录。
+
+- 已解决：本地环境搭建。
+- 待解决：部署到 Github Page 上
+  - 通过`修改_config.yml`配置文件？
+
