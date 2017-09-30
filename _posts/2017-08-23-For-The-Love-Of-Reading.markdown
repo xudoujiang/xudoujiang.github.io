@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "For-The-Love-Of-Reading"
+title:  "为了乐趣的阅读"
 date:   2017-08-23 21:17:54 +0800
 categories: Reading
 ---
